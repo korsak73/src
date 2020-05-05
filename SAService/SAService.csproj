@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B75AB110-BEE6-4F53-9F92-EBC0611772D9}</ProjectGuid>
+    <ProjectGuid>{0E3ADE6D-A55A-4784-9967-CFEE9D660DED}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>SAService</RootNamespace>
     <AssemblyName>SAService</AssemblyName>
@@ -34,9 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,12 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProjectInstaller.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ProjectInstaller.Designer.cs">
-      <DependentUpon>ProjectInstaller.cs</DependentUpon>
-    </Compile>
     <Compile Include="SAService.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -63,11 +55,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="ProjectInstaller.resx">
-      <DependentUpon>ProjectInstaller.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ServerClasses\ServerClasses.csproj">
