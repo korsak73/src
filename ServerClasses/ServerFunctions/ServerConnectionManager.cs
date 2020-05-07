@@ -152,7 +152,7 @@ namespace ServerClasses.ServerFunctions
         {
             _serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             String ip = null;
-            using (var str = new StreamReader(new FileStream(@"D:\ip.dat", FileMode.Open, FileAccess.Read)))
+            using (var str = new StreamReader(new FileStream(@"C:\ip.dat", FileMode.Open, FileAccess.Read)))
             {
                 ip = str.ReadToEnd();
             }
